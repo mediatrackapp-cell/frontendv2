@@ -1,5 +1,5 @@
 // Configuration - Get backend URL from environment or use default
-const API = 'https://live-access-gate.preview.emergentagent.com/api';
+const API = 'https://backendv2-t8my.onrender.com';
 
 
 
