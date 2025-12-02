@@ -6,22 +6,25 @@
 }
 
 :root {
-  --bg-gradient-start: #0F172A;
-  --bg-gradient-mid: #1E293B;
-  --bg-gradient-end: #334155;
-  --text-primary: #F1F5F9;
-  --text-secondary: #CBD5E1;
-  --text-muted: #94A3B8;
-  --card-bg: rgba(30, 41, 59, 0.8);
-  --card-border: rgba(51, 65, 85, 0.8);
-  --dialog-bg: rgba(30, 41, 59, 0.95);
-  --filter-chip-bg: rgba(30, 41, 59, 0.7);
-  --filter-chip-border: #334155;
-  --settings-btn-bg: rgba(30, 41, 59, 0.8);
-  --settings-btn-border: #334155;
-  --progress-bg: #334155;
-  --notes-bg: rgba(51, 65, 85, 0.5);
-  --empty-icon: #475569;
+    --primary: #0EA5E9;
+    --radius: 12px;
+    --border: #E2E8F0;
+    --bg-gradient-start: #E0F2FE;
+    --bg-gradient-mid: #DBEAFE;
+    --bg-gradient-end: #E0E7FF;
+    --text-primary: #0F172A;
+    --text-secondary: #64748B;
+    --text-muted: #94A3B8;
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --card-border: rgba(226, 232, 240, 0.8);
+    --dialog-bg: rgba(255, 255, 255, 0.95);
+    --filter-chip-bg: rgba(255, 255, 255, 0.7);
+    --filter-chip-border: #E2E8F0;
+    --settings-btn-bg: rgba(255, 255, 255, 0.8);
+    --settings-btn-border: #E2E8F0;
+    --progress-bg: #E2E8F0;
+    --notes-bg: rgba(241, 245, 249, 0.5);
+    --empty-icon: #CBD5E1;
 }
 
 
