@@ -1,5 +1,6 @@
 // Configuration - Get backend URL from environment or use default
-const API = 'https://backendv2-t8my.onrender.com/api';
+const API = 'https://backendv2-t8my.onrender.com'; // no /api
+
 
 
 // Authentication State
