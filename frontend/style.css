@@ -642,6 +642,9 @@ body {
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.2s;
+    float: right;
+    margin-top: 25px;
+    margin-right: 30px;
 }
 
 .btn-login:hover {
