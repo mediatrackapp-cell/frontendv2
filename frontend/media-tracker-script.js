@@ -745,3 +745,33 @@ await fetch(`${API}/auth/resend-verification`, {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email }),
 });
+
+document.getElementById("resendBtn").addEventListener("click", async () => {
+    const email = document.getElementById("login-email").value;
+
+    if (!email) {
+        document.getElementById("resendMsg").innerText = "Enter your email first!";
+        document.getElementById("resendMsg").style.display = "block";
+        return;
+    }
+
+    try {
+        const response = await fetch(`${API}/auth/resend-verification`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ email })
+        });
+
+        const data = await response.json();
+
+        document.getElementById("resendMsg").innerText = data.message;
+        document.getElementById("resendMsg").style.color = "green";
+        document.getElementById("resendMsg").style.display = "block";
+
+    } catch (err) {
+        document.getElementById("resendMsg").innerText = "Something went wrong!";
+        document.getElementById("resendMsg").style.display = "block";
+    }
+});
