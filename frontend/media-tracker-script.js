@@ -77,6 +77,13 @@ async function initializeApp() {
 
 let isLoginMode = true;
 
+function showAuthPage() {
+    document.getElementById('loading-screen').style.display = 'none';
+    document.getElementById('auth-page').style.display = 'flex';
+    document.getElementById('main-app').style.display = 'none';
+    setupAuthListeners();
+}
+
 function showMainApp() {
     document.getElementById('loading-screen').style.display = 'none';
     document.getElementById('auth-page').style.display = 'none';
@@ -731,22 +738,4 @@ function escapeHtml(text) {
 
 function capitalizeFirst(text) {
     return text.charAt(0).toUpperCase() + text.slice(1);
-}
-
-function showAuthPage() {
-    document.getElementById('loading-screen').style.display = 'none';
-    document.getElementById('auth-page').style.display = 'flex';
-    document.getElementById('main-app').style.display = 'none';
-    
-    isLoginMode = true;
-    setupAuthListeners();
-
-    // force login mode UI
-    document.getElementById('auth-icon-svg').innerHTML = loginIcon;
-    document.getElementById('auth-title').textContent = 'Welcome Back';
-    document.getElementById('auth-subtitle').textContent = 'Sign in to continue';
-    document.getElementById('submit-text').textContent = 'Sign In';
-    document.getElementById('toggle-text').textContent = "Don't have an account?";
-    document.getElementById('toggle-btn').textContent = 'Sign Up';
-    document.getElementById('name-group').style.display = 'none';
 }
