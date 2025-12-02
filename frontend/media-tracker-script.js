@@ -739,3 +739,9 @@ function escapeHtml(text) {
 function capitalizeFirst(text) {
     return text.charAt(0).toUpperCase() + text.slice(1);
 }
+
+await fetch(`${API}/auth/resend-verification`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email }),
+});
